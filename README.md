@@ -1,4 +1,4 @@
-nightmare-example
+nightmare-example [![Build Status](https://img.shields.io/travis/ThibWeb/nightmare-example.svg?style=flat-square)](https://travis-ci.org/ThibWeb/nightmare-example)
 =================
 
 ```
