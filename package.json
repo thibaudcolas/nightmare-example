@@ -1,18 +1,20 @@
 {
   "name": "nightmare-example",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "Example of using nightmare with tests",
   "main": "test.js",
-  "scripts": {
-    "test": "mocha -- test.js"
-  },
   "keywords": [],
-  "author": "",
+  "author": "Thibaud Colas <thib@thib.me> (https://github.com/thibaudcolas)",
   "license": "ISC",
-  "dependencies": {
-    "chai": "^3.4.1",
-    "mocha": "^2.3.4",
-    "mocha-generators": "^1.2.0",
-    "nightmare": "^2.0.8"
+  "devDependencies": {
+    "babel-jest": "^16.0.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "jest": "^16.0.1",
+    "nightmare": "^2.8.1"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
