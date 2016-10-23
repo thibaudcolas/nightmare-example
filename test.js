@@ -26,7 +26,7 @@ describe('Test blog content', function() {
         it('page title', function*() {
             const title = yield night.evaluate(() => document.querySelector('header h1').innerText);
 
-            expect(title).to.equal('thibaudcolas\'s Blog');
+            expect(title).to.equal('Thibaud’s blog');
         });
 
         it('articles on homepage', function*() {
