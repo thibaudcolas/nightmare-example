@@ -1,16 +1,12 @@
 sudo: false
 language: node_js
-node_js:
-- 'stable'
-install:
-- npm install
 before_script:
-- "export DISPLAY=:99.0"
-- "sh -e /etc/init.d/xvfb start"
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
 - sleep 3
 script:
 - npm run test
 notifications:
-  email:
-    on_success: change
-    on_failure: always
+  email: false
+  slack:
+    secure: PvOWn9cPZ0VhoaRdgT3rtveyBfxgjPW2FFyxX0a1usq4JqLkgjwVKFgfF4FULaonBZ7KaohQ2uo26Vkco+5qJ5jgeEGnVIr2XfhNtj0wL1bk6Hdnpix+c7Q7wPqND9nqqbK2SFflPUAEp96SDPmd2+tAe8AqAJ2LXuwp6Q+XRdnpCPu50pgXqwjyUBbsn2eLCvttg5M9GavfNG7oScVD0gOZR8hRQ/WLuM2U//W+TDTjd2R/xUJEyCIvRpyZmTHSGouygqq7ucrcCvGiMdP3okqPSWLyg2zVL27kQAnf6MxA3knIuzmsg6XPHx27EEC6jAPmcIHDUq0OMXiusr/GvOJ90EyTExTChI3qoHmDdAv/b6kYTAO9PAwHnbAmLHEGEzTkhFHkctSoZHazjlyicSDn4Q/ELXVaqMF4W9dqv6EngHfTT6ul4X/TY2DxEb2XY2E/5j8zr3o43mlxZLfsUbsOw/8Cb/u8Ob66TDch4SUdO22GIJTt1Lw8efWLwCkq7v7zp/qZsBFXVDcYMbV26QKKp9alA3dA7yi9y8kq4Z+CPsENXTQdb+tqUrEBQ+0v5UeF1EBKVh/GUlBsKGTZg03S+7ipM+Y6ANZd0Zgxb1TlzOp/yXR7j/U2jbkOZg7pit+3puhwe4P9ECeJfZPV9imj3ewxWK6RsUxz9wDFnIg=
